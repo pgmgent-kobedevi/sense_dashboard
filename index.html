@@ -8,10 +8,16 @@
 </head>
 <body>
     <!-- https://github.com/rogerthat-be/sense_dashboard -->
+    <form>
+        <div class="form-group">
+          <label for="color">Kleur</label>
+          <input type="email" class="form-control jscolor" id="colorPicker" value="#000">
+        </div>
+        <button type="submit" class="btn btn-primary" id="btnChange">Submit</button>
+    </form>
 
-
-
-
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
     <script src="./config/firebase.js"></script>
